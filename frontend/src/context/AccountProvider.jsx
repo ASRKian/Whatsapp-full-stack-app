@@ -13,7 +13,7 @@ export default function AccountProvider(props) {
   const socket = useRef()
 
   useEffect(()=>{
-    socket.current = io('ws://localhost:9000')
+    socket.current = io('https://whatsapp-full-stack-app-socket.onrender.com')
   },[])
 
   return (
