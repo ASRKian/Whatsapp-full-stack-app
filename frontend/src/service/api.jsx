@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = 'http://localhost:8000'
+const url = 'https://whatsapp-full-stack-app-backend.onrender.com'
 export const addUser = async (data) => {
     try {
         await axios.post(`${url}/add`, data)
