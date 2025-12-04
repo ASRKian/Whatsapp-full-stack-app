@@ -3,12 +3,13 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const user = process.env.USER_NAME
-const pass = process.env.DB_PASSWORD
+// const user = process.env.USER_NAME
+// const pass = process.env.DB_PASSWORD
 
  const Connection = async () => {
     // const uri = `mongodb+srv://${user}:${pass}@cluster0.zoyauwr.mongodb.net/?retryWrites=true&w=majority`
-    const uri = 'mongodb://0.0.0.0:27017/user'
+    // const uri = 'mongodb://0.0.0.0:27017/user'
+    const uri = "mongodb+srv://loki:EKx7xKHsD3Oj4Xr6@loki.cruec.mongodb.net/?appName=Loki"
     try {
         await mongoose.connect(uri, { useUnifiedTopology: true })
         console.log('connected successfully');
